@@ -4,6 +4,11 @@ This version of the mega.py library includes a fix for the file download issue t
 For more details, please refer to the Stack Overflow post: Problem downloading MEGA files with Python: https://stackoverflow.com/questions/68465210/problem-downloading-mega-files-with-python
 
 ---------
+**Pip Requirment changes:**
+Changed from tenacity-5.1.5 to tenacity==8.0.1 Resolved the Below Error.
+AttributeError: module 'asyncio' has no attribute 'coroutine'. Did you mean: 'coroutines'?
+
+---------
 
 This library is no longer maintained, you should instead use the official CLI client MEGAcmd:
 
