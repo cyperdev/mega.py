@@ -1,3 +1,10 @@
+**Changes and Issue Resolved**
+This version of the mega.py library includes a fix for the file download issue that occurred during the download process. The problem, which was identified in a Stack Overflow post, was resolved by adding temp_output_file.close() above the line shutil.move(temp_output_file.name, output_path) in the mega.py file. This change ensures proper handling of the temporary output file during downloads.
+
+For more details, please refer to the Stack Overflow post: Problem downloading MEGA files with Python: https://stackoverflow.com/questions/68465210/problem-downloading-mega-files-with-python
+
+---------
+
 This library is no longer maintained, you should instead use the official CLI client MEGAcmd:
 
 Download it: https://mega.io/cmd#downloadapps
